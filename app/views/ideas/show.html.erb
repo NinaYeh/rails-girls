@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-  <div class="span9">
-    <%= image_tag(@idea.picture_url, :width => "100%") if @idea.picture.present? %>
+  <div class="col-sm-9" align="center">
+    <%= image_tag(@idea.picture_url, :width => "50%") if @idea.picture.present? %>
   </div>
 
-  <div class="span3">
+  <div class="col-sm-3">
     <p><b>Name: </b><%= @idea.name %></p>
     <p><b>Description: </b><%= @idea.description %></p>
     <p>
